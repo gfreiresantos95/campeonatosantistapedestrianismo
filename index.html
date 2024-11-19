@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Campeonato Santista de Pedestrianismo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <style>
+            .h3 {
+                color: #25431d;
+            }
+
+            .btn-primary {
+                --bs-btn-color: #fff;
+                --bs-btn-bg: #25431d;
+                --bs-btn-border-color: #25431d;
+                --bs-btn-hover-color: #fff;
+                --bs-btn-hover-bg: #25431d;
+                --bs-btn-hover-border-color: #25431d;
+                --bs-btn-focus-shadow-rgb: 49, 132, 253;
+                --bs-btn-active-color: #fff;
+                --bs-btn-active-bg: #25431d;
+                --bs-btn-active-border-color: #25431d;
+                --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #212121;
+                --bs-btn-disabled-bg: #bdbdbd;
+                --bs-btn-disabled-border-color: #bdbdbd;
+            }
+
+            .btn-text-primary {
+                text-align: end;
+                --bs-btn-color: #25431d;
+                --bs-btn-bg: #fff;
+                --bs-btn-border-color: #fff;
+                --bs-btn-hover-color: #25431d;
+                --bs-btn-hover-bg: #fff;
+                --bs-btn-hover-border-color: #fff;
+                --bs-btn-focus-shadow-rgb: 49, 132, 253;
+                --bs-btn-active-color: #25431d;
+                --bs-btn-active-bg: #fff;
+                --bs-btn-active-border-color: #fff;
+                --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #bdbdbd;
+                --bs-btn-disabled-bg: #fff;
+                --bs-btn-disabled-border-color: #fff;
+            }
+
+            .btn-outline-primary {
+                --bs-btn-color: #25431d;
+                --bs-btn-bg: #fff;
+                --bs-btn-border-color: #25431d;
+                --bs-btn-hover-color: #25431d;
+                --bs-btn-hover-bg: #fff;
+                --bs-btn-hover-border-color: #25431d;
+                --bs-btn-focus-shadow-rgb: 49, 132, 253;
+                --bs-btn-active-color: #25431d;
+                --bs-btn-active-bg: #fff;
+                --bs-btn-active-border-color: #25431d;
+                --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #212121;
+                --bs-btn-disabled-bg: #bdbdbd;
+                --bs-btn-disabled-border-color: #bdbdbd;
+            }
+
+            .form-control {
+                border: 1px solid #bdbdbd; /* Cor inicial da borda */
+                transition: border-color 0.3s, box-shadow 0.3s; /* Suaviza a transição */
+            }
+
+            .form-control:focus {
+                border-color: #25431d;
+                box-shadow: 0 0 12px rgba(37, 67, 29, 1);
+                outline: none;
+            }
+        </style>
+    </head>
+    
+    <body style="background-image: url(images/background.jpg);">
+        <div class="container" style="margin-top: 2em;">
+            <div class="card">
+                <div class="row g-0">
+                    <div class="col-md">
+                        <img src="images/logo-pedestrianismo.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    
+                    <div class="col-md">
+                        <div class="card-body" style="padding: 1.5em; text-align: center;">
+                            <form>
+                                <img class="mb-4" src="images/brasao-cor-vertical.png" alt="" width="25%" height="25%">
+                                <h1 class="h3 fw-normal mb-3">Acesse sua conta</h1>
+                                
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control rounded-3" id="cpfInput" placeholder="CPF">
+                                    <label for="cpfInput">CPF</label>
+                                </div>
+                                
+                                <div class="form-floating mb-1">
+                                    <input type="password" class="form-control rounded-3" id="senhaInput" placeholder="Senha">
+                                    <label for="senhaInput">Senha</label>
+                                </div>
+
+                                <button class="w-100 mb-3 btn rounded-3 btn-text-primary" type="submit" style="text-align: end;">Esqueci minha senha</button>
+                                
+                                <button class="w-100 mb-1 btn btn-lg rounded-3 btn-primary" type="submit">Acessar</button>
+
+                                <button class="w-100 mb-3 btn btn-lg rounded-3 btn-outline-primary" type="submit">Não tem conta? Cadastre-se</button>
+
+                                <p class="text-body-secondary" style="text-align: center; color: #25431d;">© Gabriel Freire - 2024</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3"></ul>
+                <p class="text-center text-body-secondary">Este projeto utiliza o logotipo e as cores da Prefeitura de Santos exclusivamente para fins acadêmicos. Esclarecemos que este projeto não possui qualquer relação oficial com a Prefeitura, não recebeu nenhum tipo de apoio ou financiamento, e não representa a administração pública ou suas iniciativas.</p>
+            </footer>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>
